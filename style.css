@@ -129,7 +129,7 @@ body {
   align-items: center;
   padding: 4rem 5%;
   gap: 2rem;
-  background: #000;
+  background: #1F1F1F;
 }
 
 .about-img img {
@@ -156,7 +156,7 @@ body {
 /* Journal */
 .journal {
   padding: 3rem 5%;
-  background: #000;
+  background: #1F1F1F;
 }
 
 .journal-grid {
@@ -174,7 +174,7 @@ body {
 .newsletter {
   padding: 3rem 5%;
   text-align: center;
-  background: #000;
+  background: #1F1F1F;
 }
 
 .newsletter form {
