@@ -1,1 +1,298 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #D6D6D6;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background: #fff;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.search {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 5%;
+  background: #D6D6D6;
+  gap: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+}
+
+.hero-text p {
+  margin: 1rem 0;
+}
+
+.hero-img img {
+  max-width: 400px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #E09E29;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background: #E09E29;
+  color: #fff;
+  border-color: #E09E29;
+}
+
+/* Products */
+.products {
+  padding: 3rem 5%;
+  background: #fff;
+}
+
+.products h2 {
+  margin-bottom: 2rem;
+  font-family: "Playfair Display", serif;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* About */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 4rem 5%;
+  gap: 2rem;
+  background: #D6D6D6;
+}
+
+.about-img img {
+  max-width: 400px;
+}
+
+.about-text h2 {
+  margin-bottom: 1rem;
+  font-family: "Playfair Display", serif;
+}
+
+/* Highlight */
+.highlight {
+  padding: 3rem 5%;
+  text-align: center;
+  background: #fff;
+}
+
+.highlight h2 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+
+/* Journal */
+.journal {
+  padding: 3rem 5%;
+  background: #D6D6D6;
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.journal-card img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Newsletter */
+.newsletter {
+  padding: 3rem 5%;
+  text-align: center;
+  background: #fff;
+}
+
+.newsletter form {
+  margin-top: 1rem;
+}
+
+.newsletter input {
+  padding: 0.6rem;
+  width: 250px;
+  border: 1px solid #000;
+  margin-right: 0.5rem;
+}
+
+.newsletter button {
+  padding: 0.6rem 1.2rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background: #E09E29;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 5%;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #E09E29;
+}
+
+/* ===================== */
+/* MEDIA QUERIES         */
+/* ===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .journal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* later can add hamburger menu */
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img img {
+    max-width: 100%;
+  }
+
+  .hero-img img {
+    max-width: 100%;
+  }
+
+  .newsletter input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn, .btn-outline {
+    padding: 0.6rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
